@@ -67,7 +67,7 @@ public class StudentClass {
 			
 			if (patternLen > textLen) { return; }
 			
-//			this.prefixFunction = computePrefixFunction(pattern);
+			this.prefixFunction = computePrefixFunction(pattern);
 			int q = 0;
 			
 			for (int i = 0; i < textLen; i++) {
@@ -87,8 +87,9 @@ public class StudentClass {
 	}
 	
 	public static void main(String args[]) {
-		Matcher.getRuntimes(10, 100, "matcherTimes.txt");
-		//crossover point is t = 12 line 44 in matcherTimes file
-		//Matcher.getRatios(10, 100, ,"fRatios");
+	    //Matcher.testKMPMatcher(50, 10);
+		//Matcher.getRuntimes(10, 100, "matcherTimesWithPiCompute.txt");
+		//Matcher.getRatios(10, 100,70000,"fRatiosWithPiCompute.txt");
+	    Matcher.plotRuntimes(0.011560,0.008083, "matcherTimesWithPiCompute.txt");
 	}
 }
