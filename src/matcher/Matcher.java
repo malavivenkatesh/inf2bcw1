@@ -396,7 +396,7 @@ public class Matcher {
 			JFrame frame = new JFrame();
 		    frame.setTitle("KMP Runtime Plot");
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		    GraphingData gd = new GraphingData(1.0, data, 1, 10, c, a, "plot.jpg");
+		    GraphingData gd = new GraphingData(1.0, data, 1, 1, c, a, "plot.jpg");
 		    frame.add(gd);
 		    frame.setSize(800,800);
 		    frame.setLocation(200,200);
